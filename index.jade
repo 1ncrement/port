@@ -1,17 +1,33 @@
 html
-	head
-		//- style
-		link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
-		link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css")
-		link(rel="stylesheet" href="bower_components/animate.css/animate.min.css")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-		link(rel="stylesheet" href="css/main.css")
-		//- scripts
-		script(src="bower_components/jquery/dist/jquery.min.js")
-		script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
-		script(src="bower_components/flexslider/jquery.flexslider-min.js")
+	include ./pages/head.jade
 	body
-		.jumbotron
+		-var mainLink = '/', author = 'Evgeniy Vakulenko'
+		.row.banner
+			header#header
+				.container
+					//Menu start 
+					nav.navbar.navbar-fixed-top
+						.container
+							.navbar-header
+								button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#menu", aria-expanded="false")
+									span.sr-only Toggle
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+								a(href="#{mainLink}").navbar-brand My Logo
+							.collapse.navbar-collapse#menu
+								- var menu = [{name:'Main',link:'/'},{name:'About',link:'#'},{name:'Skills',link:'#'},{name:'Portfolio',link:'#'},{name:'Tasks',link:'#'}]
+								ul.nav.navbar-nav.navbar-right
+									- each val in menu
+										li
+											a(href="#{mainLink + val.link}") #{val.name}
+					//Menu end
 			.container
-				h1 Hello, my name 1ncrement.
-				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae delectus suscipit tempore, fugit accusamus, inventore sunt quod ullam saepe consequuntur quasi illo, odit reprehenderit dolorum tempora nisi. Architecto, maiores, aspernatur?
+				.col-md-10.col-md-offset-1
+					.text-center.title-text
+						h1.text-uppercase Hello, my Name #{author}.
+						p I'm glad to differentiate amoungst you at a party!
+		.row#content
+			.content
+		//- Footer 
+		include ./pages/footer.jade
