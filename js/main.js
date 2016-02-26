@@ -14,7 +14,6 @@
 		})
 		.error(function(e) { console.log('Error to receive json');})
 		.complete(function(){
-			console.log('complete');
 			$('<div/>',{
 				"class":"row",
 				html:cont.join('')
