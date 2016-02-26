@@ -35,8 +35,33 @@ body #footer {
   height: 250px;
   background-color: rgba(120, 20, 140, 0.6);
 }
+body #footer .footer-top {
+  padding-top: 30px;
+}
+body #footer .footer-top ul.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body #footer .footer-top ul.socials li {
+  display: inline-block;
+}
+body #footer .footer-top ul.socials li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+body #footer .footer-top ul.socials li a:hover {
+  color: rgba(40, 180, 200, 0.6);
+}
 body #footer .footer-bottom {
-  padding: 20px;
+  font-weight: padding: 20px;
+}
+body .white {
+  color: #FFFFFF;
+}
+body .bold {
+  font-weight: bold;
 }
 body hr.partition {
   border-top: 4px double rgba(120, 20, 140, 0.6);

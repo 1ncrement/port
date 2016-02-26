@@ -2,17 +2,28 @@
 	.footer-top
 		.container
 			.col-md-4
-				h5 Contacts
+				h5.text-center.white.bold Contacts
 				address
-					= 'My contact addr.'
+					!= '<strong>My contact addr.</strong>'
 					br
-					= 'state Ukraine'
+					= 'state: Ukraine'
 					br
-					= 'sity Kharkov'
+					= 'sity: Kharkov'
 					br
-					abbr(title='Phone number') 095-196-98-58
+					= 'MTC: '
+					abbr(title='Phone number') +38-095-196-98-58
 			.col-md-4
+				h5.text-center.white.bold Socials
+				ul.socials.text-center
+					- each val in socials
+						li
+							a(href="#{val.link}", target="_blank")
+								span.fa-stack
+									i.fa.fa-square-o.fa-stack-2x
+									i(class="fa fa-#{val.icon} fa-stack-1x")
 			.col-md-4
+				h5.text-center.white.bold Any info
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos nobis dolores architecto.
 	.footer-bottom
 				p.text-center
 					= 'Copyright © 2016 ActiveBox. All Rights Reserved'

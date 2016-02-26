@@ -2,6 +2,7 @@ body{
 	@color: #D1D1D1;
 	@darkColor: darken(@color, 40%);
 	@purpure: rgba(120,20,140,.6);
+	@active: rgba(40,180,200,.6);
 	// 
 	font-family: "Helvetice Neue", Helvetica,Aria;
 	font-size: 14px;
@@ -42,11 +43,34 @@ body{
 		height: 250px;
 		background-color: @purpure;
 		.footer-top{
-			
+			padding-top: 30px;
+			ul.socials{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					display: inline-block;
+					a{
+						text-decoration: none;
+						font-size: 20px;
+						color: #ffffff;
+						&:hover{
+							color:@active;
+						}
+					}
+				}
+			}
 		}
 		.footer-bottom{
+			font-weight: 
 			padding: 20px;
 		}
+	}
+	.white{
+		color:#FFFFFF;
+	}
+	.bold{
+		font-weight: bold;
 	}
 	hr.partition{
 		border-top: 4px double @purpure;
