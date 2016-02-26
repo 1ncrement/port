@@ -18,6 +18,6 @@
 			$('<div/>',{
 				"class":"row",
 				html:cont.join('')
-			}).appendTo('#portfolio .container');
+			}).appendTo('#portfolio');
 		});
 })();
