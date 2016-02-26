@@ -2,7 +2,7 @@ body {
   font-family: "Helvetice Neue", Helvetica, Aria;
   font-size: 14px;
   color: #474747;
-  background-image: url(http://www.tfstoolbox.com/bg_small_gray_dots.gif);
+  background-image: url(../img/bg_small_gray_dots.gif);
   background-color: #D1D1D1;
   background-attachment: fixed;
   z-index: 100;
