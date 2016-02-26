@@ -18,10 +18,7 @@ body .row nav ul li a {
   height: 50px;
   color: #6b6b6b;
 }
-body .row .content {
-  height: 2000px;
-}
-body .banner {
+body #banner {
   background-position: center top;
   background-repeat: no-repeat;
   -moz-background-size: cover;
@@ -31,11 +28,18 @@ body .banner {
   min-height: 460px;
   width: 100%;
 }
-body .banner .title-text {
+body #banner .title-text {
   margin-top: 200px;
 }
+body #footer {
+  height: 250px;
+  background-color: rgba(120, 20, 140, 0.6);
+}
+body #footer .footer-bottom {
+  padding: 20px;
+}
 body hr.partition {
-  border-top: 4px double #48087A;
+  border-top: 4px double rgba(120, 20, 140, 0.6);
   text-align: center;
   margin: 30px 70px;
 }

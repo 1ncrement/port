@@ -1,7 +1,7 @@
 body{
 	@color: #D1D1D1;
 	@darkColor: darken(@color, 40%);
-	@purpure: #48087A;
+	@purpure: rgba(120,20,140,.6);
 	// 
 	font-family: "Helvetice Neue", Helvetica,Aria;
 	font-size: 14px;
@@ -24,14 +24,9 @@ body{
 				}
 			}
 		}
-		// Main content
-		.content{
-			height: 2000px;
-		}
 	}
-	.banner{
-		// background-image: url(http://static.hdw.classifiedadsites.org/media/wallpapers_1920x1080/typography/1/1/binary-code-typography-hd-wallpaper-1920x1080-2619.png);
-	    background-position: center top;
+	#banner{
+		background-position: center top;
 	    background-repeat: no-repeat;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
@@ -42,6 +37,16 @@ body{
 	    .title-text{
 	    	margin-top: 200px;
 	    }
+	}
+	#footer{
+		height: 250px;
+		background-color: @purpure;
+		.footer-top{
+			
+		}
+		.footer-bottom{
+			padding: 20px;
+		}
 	}
 	hr.partition{
 		border-top: 4px double @purpure;
