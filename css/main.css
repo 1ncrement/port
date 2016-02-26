@@ -15,6 +15,7 @@ body .row nav {
   background-color: rgba(255, 255, 255, 0.8);
 }
 body .row nav ul li a {
+  height: 50px;
   color: #6b6b6b;
 }
 body .row .content {
