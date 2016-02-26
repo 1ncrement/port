@@ -1,33 +1,33 @@
-html
+html(lang="en")
 	include ./pages/head.jade
 	body
 		-var mainLink = '/', author = 'Evgeniy Vakulenko'
-		.row.banner
-			header#header
-				.container
-					//Menu start 
-					nav.navbar.navbar-fixed-top
-						.container
-							.navbar-header
-								button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#menu", aria-expanded="false")
-									span.sr-only Toggle
-									span.icon-bar
-									span.icon-bar
-									span.icon-bar
-								a(href="#{mainLink}").navbar-brand My Logo
-							.collapse.navbar-collapse#menu
-								- var menu = [{name:'Main',link:'/'},{name:'About',link:'#'},{name:'Skills',link:'#'},{name:'Portfolio',link:'#'},{name:'Tasks',link:'#'}]
-								ul.nav.navbar-nav.navbar-right
-									- each val in menu
-										li
-											a(href="#{mainLink + val.link}") #{val.name}
-					//Menu end
-			.container
-				.col-md-10.col-md-offset-1
-					.text-center.title-text
-						h1.text-uppercase Hello, my Name #{author}.
-						p I'm glad to differentiate amoungst you at a party!
+
+		include ./pages/header.jade
+
+		hr.partition
+
+		//Main Content start
 		.row#content
 			.content
+				//- include ./pages/home.jade
+				//Feature start
+				.row#feature
+					.container
+						.row
+							- for(var i=0;i<6;i++)
+								.col-md-4.col-sm-6.text-center
+									i.fa.fa-4x.fa-desktop
+									.feature-content
+										h5 Lorem ipsum dolor.
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque earum nihil id excepturi laborum laboriosam facere ratione nam, enim consectetur labore? Culpa laudantium, suscipit earum quisquam aliquam dignissimos cupiditate quo.
+				//Feature end
+				//Portfolio start
+				.row#portfolio
+					.alert.alert-info#result Result
+				//Portfolio end
+
+		//Main Content end
 		//- Footer 
 		include ./pages/footer.jade
+		include ./pages/scripts.jade

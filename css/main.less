@@ -1,21 +1,22 @@
 body{
+	@color: #D1D1D1;
+	@darkColor: darken(@color, 40%);
 	font-family: "Helvetice Neue", Helvetica,Aria;
 	font-size: 14px;
 	color: #474747;
-	margin-top: 50px;
-	background: #D1D1D1;
+	background-image: url(http://www.tfstoolbox.com/bg_small_gray_dots.gif);
+	background-color: @color;
+	background-attachment: fixed;
 	z-index: 100;
 	.row{
 		margin: 0;
 		padding: 0;
 		nav{
-			background-color: rgba(0,0,0,.2);
+			background-color: rgba(255,255,255,.8);
 			ul{
-				list-style: none;
 				li{
 					a{
-						text-decoration: none;
-						color: #7736A1;
+						color: @darkColor;
 					}
 				}
 			}
@@ -26,18 +27,22 @@ body{
 		}
 	}
 	.banner{
-		@bgColor: rgba(100,20,120,.8);
-		background-image: url(http://static.hdw.classifiedadsites.org/media/wallpapers_1920x1080/typography/1/1/binary-code-typography-hd-wallpaper-1920x1080-2619.png);
+		// background-image: url(http://static.hdw.classifiedadsites.org/media/wallpapers_1920x1080/typography/1/1/binary-code-typography-hd-wallpaper-1920x1080-2619.png);
 	    background-position: center top;
 	    background-repeat: no-repeat;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    -webkit-background-size: cover;
 	    background-size: cover;
-	    min-height: 720px;
+	    min-height: 460px;
 	    width: 100%;
 	    .title-text{
 	    	margin-top: 200px;
 	    }
+	}
+	hr.partition{
+		border-top: 4px double @color;
+		text-align: center;
+		margin: 30px 70px;
 	}
 }

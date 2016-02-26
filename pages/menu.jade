@@ -1,0 +1,13 @@
+nav.navbar.navbar-fixed-top
+	.container
+		.navbar-header
+			button.navbar-toggle.collapsed.btn(type="button", data-toggle="collapse", data-target="#menu", aria-expanded="false")
+				span.sr-only Toggle
+				span.glyphicon.glyphicon-align-justify
+			a(href="#{mainLink}").navbar-brand My Logo
+		.collapse.navbar-collapse#menu
+			- var menu = [{name:'Main',link:'/'},{name:'Features',link:'#'},{name:'Works',link:'#'},{name:'About me',link:'#'}]
+			ul.nav.navbar-nav.navbar-right
+				- each val in menu
+					li
+						a(href="#{mainLink + val.link}") #{val.name}
