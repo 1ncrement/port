@@ -2,11 +2,7 @@ html(lang="en")
 	include ./pages/head.jade
 	body
 		-var mainLink = '/', author = 'Evgeniy Vakulenko'
-
 		include ./pages/header.jade
-
-		hr.partition
-
 		//Main Content start
 		.row#content
 			.content
@@ -21,10 +17,12 @@ html(lang="en")
 									.feature-content
 										h5 Lorem ipsum dolor.
 										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam illum magni commodi porro in harum veniam libero optio incidunt?
+					hr.partition
 				//Feature end
 				//Portfolio start
 				.row#portfolio
-					.alert.alert-info#result Result
+					.container
+					hr.partition
 				//Portfolio end
 
 		//Main Content end
