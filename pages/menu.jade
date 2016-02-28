@@ -1,19 +1,19 @@
 nav.navbar.navbar-fixed-top
 	.container
 		.navbar-header
-			button.navbar-toggle.collapsed.btn(type="button", data-toggle="collapse", data-target="#menu", aria-expanded="false")
+			button.navbar-toggle.collapsed.btn(type="button", data-toggle="collapse", data-target=".navbar-collapse", aria-expanded="false")
 				span.sr-only Toggle
-				span.glyphicon.glyphicon-align-justify
-			a(href="#{mainLink}").navbar-brand My Logo
-		.collapse.navbar-collapse#menu
+				i.fa.fa-bars
+			a(href="{mainLink}").navbar-brand My Logo
+		nav.collapse.navbar-collapse#menu
 			ul.nav.navbar-nav.navbar-left.hidden-xs
 				-each val in socials
 					li
-						a(href="#{val.link}", target="_blank")
+						a(href="#{val.link}")
 							span.fa-stack
 								i.fa.fa-square-o.fa-stack-2x
 								i(class="fa fa-#{val.icon} fa-stack-1x")
 			ul.nav.navbar-nav.navbar-right
 				- each val in menu
 					li
-						a(href="#{mainLink + val.link}") #{val.name}
+						a(href="#{mainLink + val.link}", data-toggle="collapse", data-target=".navbar-collapse.in") #{val.name}
