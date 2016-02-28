@@ -9,8 +9,10 @@ body {
 }
 body .row,
 body .container {
-  margin: 0;
   padding: 0;
+}
+body .row {
+  margin: 0;
 }
 body nav {
   padding: 0 20px;
