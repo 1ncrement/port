@@ -13,58 +13,86 @@ html(lang="en")
 				//about start
 				.row#about
 					.container
-						h1 about me
+						.row
+							h1= menu[1].name
+						.row
+							.col-sm-offset-1.col-sm-10
+								-each i in aboutMe
+									dl
+										dt!= i.title
+										dd!= i.cont
 				hr.partition
 				//about end
 				//skills start
 				.row#skills
 					.container
-						h3 Перечень моих навыков.
-							br
-							small!= '1 - Базовый, 2 - Среднее, 3 - Бывалый, 4 - Джедай'
-						table.table.table-striped.table-hover.table-bordered
-							thead
-								tr
-									- each i in ['skill','level','description']
-										th= i
-							tbody
-								+skills('HTML 4/5',3,'умело пользуюсь полным набором его возможностей, также использую jade')
-								+skills('CSS3',3,'уверенно юзаю селекторы, использую препроцессоры <b>Less</b> & <b>Sass</b>, фреймворки <b>bootstrap 3</b>')
-								+skills('Bootstrap',3,'','//getbootstrap.com/getting-started/')
-								+skills('Less',3,'','//lesscss.org/')
-								+skills('Jade',3,'','//jade-lang.com/')
-								+skills('JavaScript',2,'')
-								+skills('jQuery',2,'','//jquery.com/')
-								+skills('AngularJS',1,'','//angularjs.org/')
-								+skills('NodeJS',1,'','//nodejs.org/en/')
-								+skills('PHP',2,'','//php.net/')
-								+skills('MySQL',1,'есть опыт работы с базамиданных')
-						h3 Перечень используемых программ и другого.
-							br
-							small!= '1 - Базовый, 2 - Продвинутый, 3 - Бывалый, 4 - Джедай'
-						table.table.table-striped.table-hover.table-bordered
-							thead
-								tr
-									- each i in ['programm','level','description']
-										th= i
-							tbody
-								+skills('GitHub',2,'','//github.com/')
-								+skills('Gist',2,'','//gist.github.com/')
-								+skills('PhotoShop CC',2,'')
-								+skills('Sublime Text 3',4,'','//www.sublimetext.com/3')
-								+skills('PHPStorm',4,'','//www.jetbrains.com/phpstorm/')
-								+skills('плагин Emmet',4,'','//emmet.io/')
-								+skills('использование CMS',2,'Joomla, WP, CMS Minecraft Shop, Opencart')
+						.row
+							h3 Перечень моих навыков.
+								br
+								small #{level}
+							table.table.table-striped.table-hover.table-bordered
+								thead
+									tr
+										th #{columSkill[0]}
+										th #{columSkill[2]}
+										th #{columSkill[3]}
+								tbody
+									+skills('HTML 4/5',3,'умело пользуюсь полным набором его возможностей, также использую jade')
+									+skills('CSS3',3,'уверенно юзаю селекторы, использую препроцессоры <b>Less</b> & <b>Sass</b>, фреймворки <b>bootstrap 3</b>')
+									+skills('Bootstrap',3,'','//getbootstrap.com/getting-started/')
+									+skills('Less',3,'','//lesscss.org/')
+									+skills('Jade',3,'','//jade-lang.com/')
+									+skills('JavaScript',2,'')
+									+skills('ООП',1,'Не могу много сказать об ООП, но писать конструкторы, юзать классы и вообще использовать эффективно объекты умею.')
+									+skills('Паттерны',1,'')
+									+skills('jQuery',2,'','//jquery.com/')
+									+skills('AngularJS',1,'','//angularjs.org/')
+									+skills('NodeJS',1,'я понял что это суперсткая вещь, но у меня лично возникли трудности для выпуска моего App в продакшн, хоть и на Express.','//nodejs.org/en/')
+									+skills('PHP',2,'','//php.net/')
+									+skills('MySQL',1,'есть опыт работы с базами данных')
+						.row
+							h3 Перечень используемых программ и другого.
+								br
+								small #{level}
+							table.table.table-striped.table-hover.table-bordered
+								thead
+									tr
+										th #{columSkill[1]}
+										th #{columSkill[2]}
+										th #{columSkill[3]}
+								tbody
+									+skills('GitHub',2,'','//github.com/')
+									+skills('Gist',2,'','//gist.github.com/')
+									+skills('PhotoShop CC',2,'')
+									+skills('Sublime Text 3',4,'','//www.sublimetext.com/3')
+									+skills('PHPStorm',4,'','//www.jetbrains.com/phpstorm/')
+									+skills('плагин Emmet',4,'','//emmet.io/')
+									+skills('использование CMS',2,'Joomla, WP, CMS Minecraft Shop, Opencart')
 				hr.partition
 				//skills end
 				//Portfolio start
 				.row
 					.container#portfolio
+						h1= menu[3].name
 					hr.partition
 				//Portfolio end
 				//Contact start
 				include ./pages/contact.jade
 				//Contact end
+				//modal start
+				//- button(type='button' class='btn btn-lg' data-toggle="modal" data-target="#myModal") Launch demo modal
+				.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+					.modal-dialog
+						.modal-content
+							.modal-header
+								button.close(type="button" data-dismiss="modal" aria-label="Close")
+									span(aria-hidden="true") &times;
+								h4.modal-title#myModalLabel Modal title
+							.modal-body ...
+							.modal-footer
+								button.btn.btn-default(type="button" data-dismiss="modal") Close
+								button.btn.btn-primary(type="button") Save changes
+				//modal end
 		//Main Content end
 		//- Footer 
 		include ./pages/footer.jade

@@ -43,8 +43,7 @@ body #banner .btn {
   margin: 7px;
 }
 body #skills table {
-  max-width: 900px;
-  margin: auto;
+  margin: 0 20px;
 }
 body #skills table tr {
   background-color: rgba(180, 180, 180, 0.3);
@@ -94,6 +93,20 @@ body a,
 body a:hover,
 body a:focus {
   color: rgba(120, 20, 140, 0.6);
+}
+body .h1,
+body .h2,
+body .h3,
+body .h4,
+body .h5,
+body .h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  padding: 0 30px;
 }
 body hr.partition {
   border-top: 4px double rgba(120, 20, 140, 0.6);
