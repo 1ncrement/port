@@ -42,14 +42,8 @@ body #banner p {
 body #banner .btn {
   margin: 7px;
 }
-body #skills table {
-  margin: 0 20px;
-}
 body #skills table tr {
   background-color: rgba(180, 180, 180, 0.3);
-}
-body #skills table tr > td {
-  min-width: 200px;
 }
 body #skills table.table-hover tr:hover {
   background-color: rgba(150, 150, 150, 0.5);
