@@ -1,3 +1,34 @@
-- var mainLink = '/', author = 'Evgeniy Vakulenko'
+- var mainLink = '', author = 'Евгений Вакуленко', age = new Date(1993,7,8), now = new Date()
 - var socials = [{link:'http://vk.com/vakula_e_g',icon:'vk'},{link:'https://www.facebook.com/profile.php?id=100004015285077',icon:'facebook'},{link:'https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2%D0%B0%D0%BA%D1%83%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-bb422910a?trk=nav_responsive_tab_profile',icon:'linkedin'},{link:'https://plus.google.com/u/0/110067773716162418802',icon:'google-plus'}]
-- var menu = [{name:'Main',link:'/'},{name:'Features',link:'#'},{name:'Works',link:'#'},{name:'About me',link:'#'}]
+- var menu = [{name:'Main',link:'#body'},{name:'About me',link:'#about'},{name:'Skills',link:'#skills'},{name:'Works',link:'#works'},{name:'Contact',link:'#contact'}]
+mixin skills(skill,lvl,desc,link)
+	tr
+		if link
+			case skill
+				when ''
+					td!= 'Поле пустое'
+				default
+					td
+						a(href="#{link}" target="_blank")!= skill
+		else
+			case skill
+				when ''
+					td!= 'Поле пустое'
+				default
+					td!= skill
+		case lvl
+			when 1
+				td!= '<b>Ознакомлен</b>'
+			when 2
+				td!= '<b>Продвинутый</b>'
+			when 3
+				td!= '<b>Бывалый</b>'
+			when 4
+				td!= '<b>Джедай</b>'
+			default
+				td= 'что то не так'
+		case desc
+			when ''
+				td!= 'Описание отстствует.'
+			default
+				td!= desc

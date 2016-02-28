@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
 	include ./pages/head.jade
-	body
+	body#body
 		//- Constants
 		include ./pages/vars.jade
 		//- Constants
@@ -11,6 +11,45 @@ html(lang="en")
 			.content
 				//- include ./pages/home.jade
 				//skills start
+				.row#skills
+					.container
+						h3 Перечень моих навыков.
+							br
+							small 1 - Ознакомлен, 2 - Продвинутый, 3 - Бывалый, 4 - Джедай
+						table.table.table-striped.table-hover
+							thead
+								tr
+									- each i in ['skill','level','description']
+										th= i
+							tbody
+								+skills('HTML 4/5',3,'умело пользуюсь полным набором его возможностей, также использую jade')
+								+skills('CSS3',3,'уверенноюзаю селекторы, использую препроцессоры <b>Less</b> & <b>Sass</b>, фреймворки <b>bootstrap 3</b>')
+								+skills('Bootstrap',3,'','//getbootstrap.com/getting-started/')
+								+skills('Less',3,'','//lesscss.org/')
+								+skills('Jade',3,'','//jade-lang.com/')
+								+skills('JavaScript',2,'')
+								+skills('jQuery',2,'','//jquery.com/')
+								+skills('AngularJS',1,'','//angularjs.org/')
+								+skills('NodeJS',1,'','//nodejs.org/en/')
+								+skills('PHP',2,'','//php.net/')
+
+						h3 Перечень используемых программ и другого.
+							br
+							small 1 - Ознакомлен, 2 - Продвинутый, 3 - Бывалый, 4 - Джедай
+						table.table.table-striped.table-hover
+							thead
+								tr
+									- each i in ['programm','level','description']
+										th= i
+							tbody
+								+skills('GitHub',2,'','//github.com/')
+								+skills('Gist',2,'','//gist.github.com/')
+								+skills('PhotoShop CC',2,'')
+								+skills('Sublime Text 3',4,'','//www.sublimetext.com/3')
+								+skills('PHPStorm',4,'','//www.jetbrains.com/phpstorm/')
+								+skills('плагин Emmet',4,'','//emmet.io/')
+								+skills('использование CMS',3,'Joomla, WP, CMS Minecraft Shop, Opencart')
+				hr.partition
 				//skills end
 				//Portfolio start
 				.row

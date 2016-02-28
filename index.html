@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8"/>
     <title>My portfolio</title>
+    <meta name="description" content="1ncrement, increment, vakula, vakulenko evgeniy, вакуленко евгений, frontend, html, css, js, javascript, jquery, angularjs, nodejs, express, gulp, bootstrap, less, sass, jade, web development, резюме, разработка сайтов, заказать сайт"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta property="og:image" content="path/to/image.jpg"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
-  <body>
+  <body id="body">
     <!--Header start-->
     <div id="banner" class="row">
       <header id="header">
@@ -18,20 +22,21 @@
           <nav class="navbar navbar-fixed-top">
             <div class="container">
               <div class="navbar-header">
-                <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed btn"><span class="sr-only">Toggle</span><span class="glyphicon glyphicon-align-justify"></span></button><a href="/" class="navbar-brand">My Logo</a>
+                <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed btn"><span class="sr-only">Toggle</span><span class="glyphicon glyphicon-align-justify"></span></button><a href="" class="navbar-brand">My Logo</a>
               </div>
               <div id="menu" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav navbar-left hidden-xs">
                   <li><a href="http://vk.com/vakula_e_g" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-vk fa-stack-1x"></i></span></a></li>
                   <li><a href="https://www.facebook.com/profile.php?id=100004015285077" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
                   <li><a href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2%D0%B0%D0%BA%D1%83%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-bb422910a?trk=nav_responsive_tab_profile" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a></li>
                   <li><a href="https://plus.google.com/u/0/110067773716162418802" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x"></i></span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="//">Main</a></li>
-                  <li><a href="/#">Features</a></li>
-                  <li><a href="/#">Works</a></li>
-                  <li><a href="/#">About me</a></li>
+                  <li><a href="#body">Main</a></li>
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#works">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -41,11 +46,12 @@
       </header>
       <!--Header title start-->
       <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="text-center title-text">
-            <h2 class="text-uppercase">Hello, my Name Evgeniy Vakulenko.</h2>
-            <p>I'm glad to differentiate amoungst you at a party!</p>
-          </div>
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <div class="title-text">
+            <h2 class="text-uppercase">Добро пожаловать</h2>
+            <p>на сайт резюме.</p>
+            <p>Данная страница была создана для демонстрации приблизительных способностей автора.</p>
+          </div><a href="//github.com/1ncrement/port" target="_blank" class="btn btn-info btn-lg">Git repository</a><br/><a href="//github.com/1ncrement/port/archive/gh-pages.zip" class="btn btn-success btn-xs">Download .zip</a>
         </div>
       </div>
       <!--Header title end-->
@@ -56,6 +62,120 @@
     <div id="content" class="row">
       <div class="content">
         <!--skills start-->
+        <div id="skills" class="row">
+          <div class="container">
+            <h3>Перечень моих навыков.<br/><small>1 - Ознакомлен, 2 - Продвинутый, 3 - Бывалый, 4 - Джедай</small></h3>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>skill</th>
+                  <th>level</th>
+                  <th>description</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <tr>
+                      <td>HTML 4/5</td>
+                      <td><b>Бывалый</b></td>
+                      <td>умело пользуюсь полным набором его возможностей, также использую jade</td>
+                    </tr>
+                    <tr>
+                      <td>CSS3</td>
+                      <td><b>Бывалый</b></td>
+                      <td>уверенноюзаю селекторы, использую препроцессоры <b>Less</b> & <b>Sass</b>, фреймворки <b>bootstrap 3</b></td>
+                    </tr>
+                    <tr>
+                      <td><a href="//getbootstrap.com/getting-started/" target="_blank">Bootstrap</a></td>
+                      <td><b>Бывалый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//lesscss.org/" target="_blank">Less</a></td>
+                      <td><b>Бывалый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//jade-lang.com/" target="_blank">Jade</a></td>
+                      <td><b>Бывалый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td>JavaScript</td>
+                      <td><b>Продвинутый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//jquery.com/" target="_blank">jQuery</a></td>
+                      <td><b>Продвинутый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//angularjs.org/" target="_blank">AngularJS</a></td>
+                      <td><b>Ознакомлен</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//nodejs.org/en/" target="_blank">NodeJS</a></td>
+                      <td><b>Ознакомлен</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//php.net/" target="_blank">PHP</a></td>
+                      <td><b>Продвинутый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+              </tbody>
+            </table>
+            <h3>Перечень используемых программ и другого.<br/><small>1 - Ознакомлен, 2 - Продвинутый, 3 - Бывалый, 4 - Джедай</small></h3>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>programm</th>
+                  <th>level</th>
+                  <th>description</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <tr>
+                      <td><a href="//github.com/" target="_blank">GitHub</a></td>
+                      <td><b>Продвинутый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//gist.github.com/" target="_blank">Gist</a></td>
+                      <td><b>Продвинутый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td>PhotoShop CC</td>
+                      <td><b>Продвинутый</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//www.sublimetext.com/3" target="_blank">Sublime Text 3</a></td>
+                      <td><b>Джедай</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//www.jetbrains.com/phpstorm/" target="_blank">PHPStorm</a></td>
+                      <td><b>Джедай</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td><a href="//emmet.io/" target="_blank">плагин Emmet</a></td>
+                      <td><b>Джедай</b></td>
+                      <td>Описание отстствует.</td>
+                    </tr>
+                    <tr>
+                      <td>использование CMS</td>
+                      <td><b>Бывалый</b></td>
+                      <td>Joomla, WP, CMS Minecraft Shop, Opencart</td>
+                    </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr class="partition"/>
         <!--skills end-->
         <!--Portfolio start-->
         <div class="row">
@@ -89,8 +209,11 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h5 class="text-center white bold">Any info</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos nobis dolores architecto.</p>
+            <h5 class="text-center white bold">Author info</h5>
+            <p>name: <b class="authorName">Евгений Вакуленко</b>
+            </p>
+            <p>age: <b class="authorAge">23</b>
+            </p>
           </div>
         </div>
       </div>
@@ -99,10 +222,11 @@
         </p>
       </div>
     </div>
+    <!--scripts start-->
     <script async="async" src="//www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="bower_components/flexslider/jquery.flexslider-min.js"></script>
+    <!--script(type='text/javascript' src="bower_components/flexslider/jquery.flexslider-min.js")-->
     <script type="text/javascript" async="async" src="js/main.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="async" defer="defer"></script>
     <script>

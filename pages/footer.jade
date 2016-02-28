@@ -22,8 +22,13 @@
 									i.fa.fa-square-o.fa-stack-2x
 									i(class="fa fa-#{val.icon} fa-stack-1x")
 			.col-md-4
-				h5.text-center.white.bold Any info
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos nobis dolores architecto.
+				h5.text-center.white.bold Author info
+				p
+					='name: '
+					b.authorName #{author}
+				p
+					='age: '
+					b.authorAge #{now.getFullYear() - age.getFullYear()}
 	.footer-bottom
 		p.text-center
 			!= 'Copyright © 2016 ActiveBox. All Rights Reserved <br>with '
