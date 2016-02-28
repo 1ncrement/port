@@ -24,7 +24,9 @@ body{
 			li{
 				a{
 					height: 50px;
-					color: @darkColor;
+					a:hover, a:focus{
+						color: @darkColor;
+					}
 				}
 			}
 		}
@@ -52,9 +54,16 @@ body{
 	}
 	#skills{
 		table{
-			tbody{
+			max-width: 900px;
+			margin: auto;
+			tr{
+				background-color: @rgba;
+				>td{
+					min-width: 200px;
+				}
+			}
+			&.table-hover{
 				tr{
-					background-color: @rgba;
 					&:hover{
 						background-color: @rgbaH;
 					}
@@ -63,7 +72,7 @@ body{
 		}
 	}
 	#footer{
-		height: 250px;
+		min-height: 250px;
 		background-color: @purpure;
 		.footer-top{
 			padding-top: 30px;
@@ -73,13 +82,10 @@ body{
 				padding: 0;
 				li{
 					display: inline-block;
-					a{
+					a, a:hover, a:focus{
+						color: #fff;
 						text-decoration: none;
 						font-size: 20px;
-						color: #ffffff;
-						&:hover{
-							color:@active;
-						}
 					}
 				}
 			}
@@ -98,6 +104,9 @@ body{
 	}
 	.bold{
 		font-weight: bold;
+	}
+	a, a:hover, a:focus{
+		color: @purpure;
 	}
 	hr.partition{
 		border-top: 4px double @purpure;

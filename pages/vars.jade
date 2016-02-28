@@ -6,25 +6,25 @@ mixin skills(skill,lvl,desc,link)
 		if link
 			case skill
 				when ''
-					td!= 'Поле пустое'
+					td.bold!= 'Поле пустое'
 				default
-					td
+					td.bold
 						a(href="#{link}" target="_blank")!= skill
 		else
 			case skill
 				when ''
-					td!= 'Поле пустое'
+					td.bold!= 'Поле пустое'
 				default
-					td!= skill
+					td.bold!= skill
 		case lvl
 			when 1
-				td!= '<b>Ознакомлен</b>'
+				td!= 'базовый'
 			when 2
-				td!= '<b>Продвинутый</b>'
+				td!= 'продвинутый'
 			when 3
-				td!= '<b>Бывалый</b>'
+				td!= 'среднее'
 			when 4
-				td!= '<b>Джедай</b>'
+				td!= 'Джедай'
 			default
 				td= 'что то не так'
 		case desc

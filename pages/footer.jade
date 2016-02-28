@@ -1,8 +1,8 @@
 .row#footer
 	.footer-top
 		.container
-			.col-md-4
-				h5.text-center.white.bold Contacts
+			.col-md-4.text-center
+				h5.white.bold Contacts
 				address
 					!= '<strong>My contact addr.</strong>'
 					br
@@ -12,8 +12,8 @@
 					br
 					= 'MTC: '
 					abbr(title='Phone number') +38-095-196-98-58
-			.col-md-4
-				h5.text-center.white.bold Socials
+			.col-md-4.text-center
+				h5.white.bold Socials
 				ul.socials.text-center
 					- each val in socials
 						li
@@ -21,8 +21,8 @@
 								span.fa-stack
 									i.fa.fa-square-o.fa-stack-2x
 									i(class="fa fa-#{val.icon} fa-stack-1x")
-			.col-md-4
-				h5.text-center.white.bold Author info
+			.col-md-4.text-center
+				h5.white.bold Author info
 				p
 					='name: '
 					b.authorName #{author}

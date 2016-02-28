@@ -16,6 +16,9 @@ body nav {
 }
 body nav ul li a {
   height: 50px;
+}
+body nav ul li a a:hover,
+body nav ul li a a:focus {
   color: #6b6b6b;
 }
 body #banner {
@@ -39,14 +42,21 @@ body #banner p {
 body #banner .btn {
   margin: 7px;
 }
-body #skills table tbody tr {
+body #skills table {
+  max-width: 900px;
+  margin: auto;
+}
+body #skills table tr {
   background-color: rgba(180, 180, 180, 0.3);
 }
-body #skills table tbody tr:hover {
+body #skills table tr > td {
+  min-width: 200px;
+}
+body #skills table.table-hover tr:hover {
   background-color: rgba(150, 150, 150, 0.5);
 }
 body #footer {
-  height: 250px;
+  min-height: 250px;
   background-color: rgba(120, 20, 140, 0.6);
 }
 body #footer .footer-top {
@@ -60,13 +70,12 @@ body #footer .footer-top ul.socials {
 body #footer .footer-top ul.socials li {
   display: inline-block;
 }
-body #footer .footer-top ul.socials li a {
+body #footer .footer-top ul.socials li a,
+body #footer .footer-top ul.socials li a:hover,
+body #footer .footer-top ul.socials li a:focus {
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
-  color: #ffffff;
-}
-body #footer .footer-top ul.socials li a:hover {
-  color: rgba(40, 180, 200, 0.6);
 }
 body #footer .footer-bottom {
   font-weight: padding: 20px;
@@ -80,6 +89,11 @@ body .white {
 }
 body .bold {
   font-weight: bold;
+}
+body a,
+body a:hover,
+body a:focus {
+  color: rgba(120, 20, 140, 0.6);
 }
 body hr.partition {
   border-top: 4px double rgba(120, 20, 140, 0.6);
