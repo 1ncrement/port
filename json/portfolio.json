@@ -1,32 +1,41 @@
-[
-{
-	"title":"Wooden1",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam illum magni commodi porro in harum veniam libero optio incidunt?",
-	"fa":"fa-desktop"
-},
-{
-	"title":"Refresher",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, alias, earum voluptas distinctio porro consequatur.",
-	"fa":"fa-refresh fa-spin"
-},
-{
-	"title":"Wooden3",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam illum magni commodi porro in harum veniam libero optio incidunt?",
-	"fa":"fa-desktop"
-},
-{
-	"title":"Wooden4",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam illum magni commodi porro in harum veniam libero optio incidunt?",
-	"fa":"fa-desktop"
-},
-{
-	"title":"Wooden5",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam illum magni commodi porro in harum veniam libero optio incidunt?",
-	"fa":"fa-desktop"
-},
-{
-	"title":"Wooden6",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquam illum magni commodi porro in harum veniam libero optio incidunt?",
-	"fa":"fa-desktop"
-}
-]
+[{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"http://www.deepdetect.com/img/cat.jpg",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Xu8TLdSK_BVQeExiHWuLOFZIJy2F4DotmCWp9RGbFjj_UK9J",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"http://www.deepdetect.com/img/cat.jpg",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"http://img.zzweb.ru/img/888587/cat8.jpg.__GF_600x.jpg",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Xu8TLdSK_BVQeExiHWuLOFZIJy2F4DotmCWp9RGbFjj_UK9J",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Xu8TLdSK_BVQeExiHWuLOFZIJy2F4DotmCWp9RGbFjj_UK9J",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Xu8TLdSK_BVQeExiHWuLOFZIJy2F4DotmCWp9RGbFjj_UK9J",
+	"link":"#"
+},{
+	"name":"Шаблон сайта",
+	"descr":"обычный шаблон с применением html + css + js",
+	"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Xu8TLdSK_BVQeExiHWuLOFZIJy2F4DotmCWp9RGbFjj_UK9J",
+	"link":"#"
+}]

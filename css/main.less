@@ -58,8 +58,6 @@ body{
 	    	margin: 7px;
 	    }
 	}
-	#about{
-	}
 	#skills{
 		table{
 			tr{
@@ -69,6 +67,44 @@ body{
 				tr{
 					&:hover{
 						background-color: @rgbaH;
+					}
+				}
+			}
+		}
+	}
+	#works{
+		.wrapper{
+			margin-bottom: 10px;
+			a{
+				text-decoration: none;
+				&>.img-title{
+					height: 200px;
+					overflow: hidden;
+					img{
+						background-size: cover;
+						width: 100%;
+						height: inherit;
+					}
+					&>.title{
+						width: 100%;
+						background-color: rgba(50,50,50,.7);
+						position: relative;
+						top: -40px;
+						padding: 2px 4px;
+						-webkit-transition: 1s;
+						-moz-transition: 1s;
+						-o-transition: 1s;
+						transition: 1s;
+						h4{
+							color: orange;
+						}
+						p{	
+							padding: 0 4px;
+							color: #fff;
+						}
+					}
+					&:hover .title{
+						top: -90px;
 					}
 				}
 			}

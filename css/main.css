@@ -54,6 +54,42 @@ body #skills table tr {
 body #skills table.table-hover tr:hover {
   background-color: rgba(150, 150, 150, 0.5);
 }
+body #works .wrapper {
+  margin-bottom: 10px;
+}
+body #works .wrapper a {
+  text-decoration: none;
+}
+body #works .wrapper a > .img-title {
+  height: 200px;
+  overflow: hidden;
+}
+body #works .wrapper a > .img-title img {
+  background-size: cover;
+  width: 100%;
+  height: inherit;
+}
+body #works .wrapper a > .img-title > .title {
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.7);
+  position: relative;
+  top: -40px;
+  padding: 2px 4px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+body #works .wrapper a > .img-title > .title h4 {
+  color: orange;
+}
+body #works .wrapper a > .img-title > .title p {
+  padding: 0 4px;
+  color: #fff;
+}
+body #works .wrapper a > .img-title:hover .title {
+  top: -90px;
+}
 body #footer {
   min-height: 250px;
   background-color: rgba(120, 20, 140, 0.6);

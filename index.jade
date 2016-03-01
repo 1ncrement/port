@@ -16,7 +16,7 @@ html(lang="en")
 						.row
 							h1= menu[1].name
 						.row
-							.col-sm-offset-1.col-sm-10
+							.col-md-offset-1.col-sm-10
 								-each i in aboutMe
 									dl
 										dt!= i.title
@@ -44,7 +44,7 @@ html(lang="en")
 									+skills('Jade',3,'','//jade-lang.com/')
 									+skills('JavaScript',2,'')
 									+skills('ООП',1,'Не могу много сказать об ООП, но писать конструкторы, юзать классы и вообще использовать эффективно объекты умею.')
-									+skills('Паттерны',1,'')
+									// +skills('Паттерны',1,'')
 									+skills('jQuery',2,'','//jquery.com/')
 									+skills('AngularJS',1,'','//angularjs.org/')
 									+skills('NodeJS',1,'я понял что это суперсткая вещь, но у меня лично возникли трудности для выпуска моего App в продакшн, хоть и на Express.','//nodejs.org/en/')
@@ -72,7 +72,7 @@ html(lang="en")
 				//skills end
 				//Portfolio start
 				.row
-					.container#portfolio
+					.container#works
 						h1= menu[3].name
 					hr.partition
 				//Portfolio end
