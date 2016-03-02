@@ -4,9 +4,9 @@ nav.navbar.navbar-fixed-top
 			button.navbar-toggle.collapsed.btn(type="button", data-toggle="collapse", data-target=".navbar-collapse", aria-expanded="false")
 				span.sr-only Toggle
 				i.fa.fa-bars
-			a(href="#{mainLink}").navbar-brand My Logo
+			a.navbar-brand My Logo
 		nav.collapse.navbar-collapse#menu
-			ul.nav.navbar-nav.navbar-left.hidden-xs
+			ul.nav.navbar-nav.navbar-left.hidden-xs.hidden-sm
 				-each val in socials
 					li
 						a(href="#{val.link}")
@@ -16,4 +16,4 @@ nav.navbar.navbar-fixed-top
 			ul.nav.navbar-nav.navbar-right
 				- each val in menu
 					li
-						a(href="#{mainLink + val.link}", data-toggle="collapse", data-target=".navbar-collapse.in") #{val.name}
+						a(onclick="scrollMenu('#{val.link}')", data-toggle="collapse", data-target=".navbar-collapse.in") #{val.name}

@@ -1,4 +1,5 @@
 (function(){
+	// portfolio
 	$.getJSON('json/portfolio.json')
 		.success(function(data){
 			var cont = [];

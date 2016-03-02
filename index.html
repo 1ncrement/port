@@ -25,10 +25,10 @@
           <nav class="navbar navbar-fixed-top">
             <div class="container">
               <div class="navbar-header">
-                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed btn"><span class="sr-only">Toggle</span><i class="fa fa-bars"></i></button><a href="" class="navbar-brand">My Logo</a>
+                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed btn"><span class="sr-only">Toggle</span><i class="fa fa-bars"></i></button><a class="navbar-brand">My Logo</a>
               </div>
               <nav id="menu" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-left hidden-xs">
+                <ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
                   <li><a href="http://vk.com/vakula_e_g"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-vk fa-stack-1x"></i></span></a></li>
                   <li><a href="https://www.facebook.com/profile.php?id=100004015285077"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
                   <li><a href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2%D0%B0%D0%BA%D1%83%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-bb422910a?trk=nav_responsive_tab_profile"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a></li>
@@ -36,11 +36,11 @@
                   <li><a href="//github.com/1ncrement/port"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#body" data-toggle="collapse" data-target=".navbar-collapse.in">Главная</a></li>
-                  <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">Обо мне</a></li>
-                  <li><a href="#skills" data-toggle="collapse" data-target=".navbar-collapse.in">Навыки</a></li>
-                  <li><a href="#works" data-toggle="collapse" data-target=".navbar-collapse.in">Работы</a></li>
-                  <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Контакты</a></li>
+                  <li><a onclick="scrollMenu('#body')" data-toggle="collapse" data-target=".navbar-collapse.in">Главная</a></li>
+                  <li><a onclick="scrollMenu('#about')" data-toggle="collapse" data-target=".navbar-collapse.in">Обо мне</a></li>
+                  <li><a onclick="scrollMenu('#skills')" data-toggle="collapse" data-target=".navbar-collapse.in">Навыки</a></li>
+                  <li><a onclick="scrollMenu('#works')" data-toggle="collapse" data-target=".navbar-collapse.in">Работы</a></li>
+                  <li><a onclick="scrollMenu('#contact')" data-toggle="collapse" data-target=".navbar-collapse.in">Контакты</a></li>
                 </ul>
               </nav>
             </div>
@@ -55,7 +55,7 @@
             <h2 class="text-uppercase">Добро пожаловать</h2>
             <p>на сайт резюме.</p>
             <p>Данная страница была создана для демонстрации приблизительных способностей автора.</p>
-            <p>Для написания данного сайта использовались Руки, Jade и Less.</p>
+            <p>было использовано jQuery, Jade & Less.</p>
           </div><a href="//github.com/1ncrement/port" target="_blank" class="btn btn-info btn-lg"> <i class="fa fa-github-square"></i> Git repository</a><br/><a href="//github.com/1ncrement/port/archive/gh-pages.zip" class="btn btn-success btn-xs">Download .zip</a>
         </div>
       </div>
@@ -332,6 +332,11 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-74366337-1', 'auto');
       ga('send', 'pageview');
+    </script>
+    <script>
+      function scrollMenu(item){
+      	$('html, body').animate({scrollTop:$(item).position().top}, 600);
+      }
     </script>
   </body>
 </html>

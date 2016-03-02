@@ -21,3 +21,7 @@ script(type='text/javascript').
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-74366337-1', 'auto');
 	ga('send', 'pageview');
+script.
+	function scrollMenu(item){
+		$('html, body').animate({scrollTop:$(item).position().top}, 600);
+	}
