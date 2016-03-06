@@ -2,7 +2,7 @@
 	"name":"Мой первый шаблон",
 	"descr":"обычный шаблон с применением html + css + js",
 	"img":"http://cdn.images.express.co.uk/img/dynamic/130/590x/Mountains-625882.jpg",
-	"link":"/templates/easeMountains/"
+	"link":"/port/templates/easeMountains/"
 },{
 	"name":"Шаблон сайта",
 	"descr":"обычный шаблон с применением html + css + js",
