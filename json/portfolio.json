@@ -1,8 +1,8 @@
 [{
-	"name":"Шаблон сайта",
+	"name":"Мой первый шаблон",
 	"descr":"обычный шаблон с применением html + css + js",
-	"img":"http://www.deepdetect.com/img/cat.jpg",
-	"link":"#"
+	"img":"http://cdn.images.express.co.uk/img/dynamic/130/590x/Mountains-625882.jpg",
+	"link":"/templates/easeMountains/"
 },{
 	"name":"Шаблон сайта",
 	"descr":"обычный шаблон с применением html + css + js",
