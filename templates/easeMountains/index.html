@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mountains</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/animate.css">
+		<style>
+			.top{
+				background-image: url(img/bg-top.png);
+				-webkit-background-size: cover;
+				background-size: cover;
+				padding-top: 400px;
+				padding-bottom: 50px;
+			}
+			.top h1:before,
+			.top h1:after{
+				content: ' * ';
+			}
+			.white{
+				background-color: #fff;
+				color: #1A1A1A;
+			}
+			.text-white{
+				color: #fff;
+			}
+			.about, .team{
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+			.team .row{
+				margin-top: 90px;
+				margin-bottom: 90px;
+			}
+			.blue{
+				background-color: #0ebfdd;
+				color: #EEEEEE;
+			}
+			.b{
+				font-weight: bold;
+			}
+			.btn{
+				border-radius: 25px;
+			}
+			.btn-work{
+				color: #fff;
+				border: 1px solid #fff;
+				padding: 10px 35px;
+				background-color: transparent;
+			}
+			.footer{
+				background-color: #45494d;
+				padding-top: 28px;
+				color: #fff;
+				padding-bottom: 28px;
+			}
+			.border{
+				height: 40px;
+				width: 40px;
+				border: 2px solid #ccc;
+				border-radius: 50%;
+				padding: 10px;
+			}
+			a,a:hover,a:focus{
+				color: #fff;
+			}
+			.grey{
+				color: #808080;
+			}
+			#map{
+				height: 600px;
+			}
+			*[data-os-animation]{
+				visibility: hidden;
+			}
+			*[class*="animated"]{
+				visibility: visible;
+			}
+		</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed btn">
+							<span class="sr-only">Toggle</span>
+							<i class="fa fa-bars"></i>
+						</button>
+						<a href="" class="navbar-brand">My Logo</a>
+					</div>
+					<nav id="menu" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right" id="top-menu">
+							<li><a href="#body" data-toggle="collapse" data-target=".navbar-collapse.in">Главная</a></li>
+							<li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
+							<li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse.in">Team</a></li>
+							<li><a href="#map" data-toggle="collapse" data-target=".navbar-collapse.in">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</header>
+		<div class="row top text-white text-center" id="body">
+			<div class="container">
+				<div class="col-sm-offset-2 col-sm-8">	
+					<h1 class="anim-head" data-os-animation="fadeInDown" data-os-animation-delay="0.3s">Our Missoon</h1>
+					<h5 class="anim-head" data-os-animation="fadeInDown" data-os-animation-delay="0.6s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsam dolor explicabo laboriosam iste fugiat, cumque quam, sunt dolorum odit quia nostrum nihil nisi nesciunt mollitia dolore cum iure id!</h5>
+				</div>
+			</div>
+		</div>
+		<div class="row white about" id="about">
+			<div class="container text-center">
+				<div class="col-sm-offset-1 col-sm-10">
+					<h2 class="anim-about b" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">About</h2>
+					<h5 class="anim-about" data-os-animation="fadeInLeft" data-os-animation-delay="0.6s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, odio similique tenetur fuga architecto deserunt ipsum quas maiores ad repellendus expedita magnam natus consequuntur voluptates, iusto unde libero laboriosam minima.</h5>
+				</div>
+			</div>
+		</div>
+		<div class="row blue team" id="team">
+			<div class="container text-center">
+				<h2>Team</h2>
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-10">
+						<div class="anim-team col-sm-4 text-center" data-os-animation="bounceIn" data-os-animation-delay="0.3s">
+							<img src="img/img-prof-1.png" alt="" class="img-circle">
+							<h4 class="name b text-capitalize">john doe</h4>
+							<p class="descr">lorem ipsum 1</p>
+						</div>
+						<div class="anim-team col-sm-4 text-center" data-os-animation="bounceIn" data-os-animation-delay="0.5s">
+							<img src="img/img-prof-2.png" alt="" class="img-circle">
+							<h4 class="name b text-capitalize">john doe</h4>
+							<p class="descr">lorem ipsum 2</p>
+						</div>
+						<div class="anim-team col-sm-4 text-center" data-os-animation="bounceIn" data-os-animation-delay="0.7s">
+							<img src="img/img-prof-3.png" alt="" class="img-circle">
+							<h4 class="name b text-capitalize">john doe</h4>
+							<p class="descr">lorem ipsum 3</p>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="anim-team btn btn-work text-uppercase" data-os-animation="bounceIn" data-os-animation-delay="0.7s">work with us</a>
+			</div>
+		</div>
+		<div class="row" id="map"></div>
+		<!-- TODO исправить иконки социалок и выровнять их по центру -->
+		<div class="row footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6" style="padding-top: 10px;">
+						<ul class="list-inline text-left">
+							<li class="text-uppercase anim-footer" data-os-animation="bounceIn" data-os-animation-delay="0.3s">about</li>
+							<li class="text-uppercase anim-footer" data-os-animation="bounceIn" data-os-animation-delay="0.5s">faq</li>
+							<li class="text-uppercase anim-footer" data-os-animation="bounceIn" data-os-animation-delay="0.7s">work with us</li>
+						</ul>
+					</div>
+					<div class="col-xs-6">
+						<ul class="list-inline text-right">
+							<li class="anim-footer" data-os-animation="bounceIn" data-os-animation-delay="0.9s">
+								<a href="#">
+									<span class="fa-stack fa-lg">
+									  <i class="fa fa-circle-o fa-stack-2x"></i>
+									  <i class="glyphicon glyphicon-envelope fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+							<li class="anim-footer" data-os-animation="bounceIn" data-os-animation-delay="1.1s">
+								<a href="#">
+									<span class="fa-stack fa-lg">
+									  <i class="fa fa-circle-o fa-stack-2x"></i>
+									  <i class="fa fa-twitter fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+							<li class="anim-footer" data-os-animation="bounceIn" data-os-animation-delay="1.2s">
+								<a href="#">
+									<span class="fa-stack fa-lg">
+									  <i class="fa fa-circle-o fa-stack-2x"></i>
+									  <i class="fa fa-facebook fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<ul class="anim-footer list-inline text-right grey" data-os-animation="bounceInDown" data-os-animation-delay="1.2s">
+							<li>Privacy Policy</li>
+							<li> | </li>
+							<li>Terms and Conditions</li>
+							<li> | </li>
+							<li>© Company LLC 2014</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<!-- myscr -->
+		<script type="text/javascript" src="//www.google-analytics.com/analytics.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
+		<script type="text/javascript">
+		// map
+			function initMap() {
+				var mapDiv = document.getElementById('map');
+				var map = new google.maps.Map(mapDiv, {
+					center: {lat: 50.01711564, lng: 36.33028507},
+					zoom: 13,
+					scrollwheel: false
+				});
+			}
+
+		// animation
+	        $(function(){
+	            function onScrollInit( items, trigger ) {
+	                items.each( function() {
+	                var osElement = $(this),
+	                    osAnimationClass = osElement.attr('data-os-animation'),
+	                    osAnimationDelay = osElement.attr('data-os-animation-delay');
+	                    osElement.css({
+	                        '-webkit-animation-delay':  osAnimationDelay,
+	                        '-moz-animation-delay':     osAnimationDelay,
+	                        'animation-delay':          osAnimationDelay
+	                    });
+	                    var osTrigger = ( trigger ) ? trigger : osElement;
+	                    osTrigger
+	                    	.waypoint(function(direction) {
+			                        osElement.addClass('animated').addClass(osAnimationClass);
+		                        },{
+		                            triggerOnce: true,
+		                            offset: '90%'
+	                    	});
+	                });
+	            }
+	            onScrollInit( $('.anim-head') );
+	            onScrollInit( $('.anim-about') );
+	            onScrollInit( $('.anim-team') );
+	            onScrollInit( $('.anim-footer') );
+			});
+
+        // scroll menu
+			// Cache selectors
+			var lastId,
+			    topMenu = $("#top-menu"),
+			    topMenuHeight = topMenu.outerHeight()+15,
+			    // All list items
+			    menuItems = topMenu.find("a"),
+			    // Anchors corresponding to menu items
+			    scrollItems = menuItems.map(function(){
+			      var item = $($(this).attr("href"));
+			      if (item.length) { return item; }
+			    });
+
+			// Bind click handler to menu items
+			// so we can get a fancy scroll animation
+			menuItems.click(function(e){
+			  var href = $(this).attr("href"),
+			      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+			  $('html, body').stop().animate({ 
+			      scrollTop: offsetTop
+			  }, 300);
+			  e.preventDefault();
+			});
+
+			// Bind to scroll
+			$(window).scroll(function(){
+			   // Get container scroll position
+			   var fromTop = $(this).scrollTop()+topMenuHeight;
+			   
+			   // Get id of current scroll item
+			   var cur = scrollItems.map(function(){
+			     if ($(this).offset().top < fromTop)
+			       return this;
+			   });
+			   // Get the id of the current element
+			   cur = cur[cur.length-1];
+			   var id = cur && cur.length ? cur[0].id : "";
+			   
+			   if (lastId !== id) {
+			       lastId = id;
+			       // Set/remove active class
+			       menuItems
+			         .parent().removeClass("active")
+			         .end().filter("[href='#"+id+"']").parent().addClass("active");
+			   }                   
+			});
+	
+		// analitics
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-74366337-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+</body>
+</html>
