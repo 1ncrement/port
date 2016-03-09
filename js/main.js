@@ -4,7 +4,7 @@
 		.success(function(data){
 			var cont = [];
 			for (var i = 0; i < data.length; i++) {
-				var w = '<div class="col-md-3 col-sm-4 col-xs-6 wrapper">';
+				var w = '<div class="col-md-4 col-xs-6 wrapper">';
 				w += '<a href="'+data[i].link+'">';
 				w += '<div class="img-title">';
 				w += '<img src="'+data[i].img+'" alt="'+data[i].name+'">';

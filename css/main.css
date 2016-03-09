@@ -1,9 +1,9 @@
 body {
   font-family: "Helvetice Neue", Helvetica, Aria;
-  font-size: 14px;
+  font-size: 16px;
   color: #474747;
   background-image: url(../img/bg_small_gray_dots.gif);
-  background-color: #D1D1D1;
+  background-color: #d1d1d1;
   background-attachment: fixed;
   z-index: 100;
 }
@@ -69,6 +69,7 @@ nav ul li a a:focus {
 }
 #works .wrapper a > .img-title > .title {
   width: 100%;
+  min-height: 90px;
   background-color: rgba(50, 50, 50, 0.7);
   position: relative;
   top: -40px;
