@@ -3,19 +3,21 @@ html(lang="en")
 	// TODO:
 		| исправить отображение "моих работ" для малых разрешений экрана
 		| переписать отображение портфолио (сделать более удобным + моб версию)
+		| написать своё меню
+		| перенести сайтик на angular
 		| написать работу с опросом и формой обратной связи
 		| создать сайтик портфолио для фотографа
 		| написать прикольное портфолио
-	include ./pages/head.jade
+	include ./page/head.jade
 	body#body
 		//- Constants
-		include ./pages/vars.jade
+		include ./page/vars.jade
 		//- Constants
-		include ./pages/header.jade
+		include ./page/header.jade
 		//Main Content start
 		.row#content
 			.content
-				//- include ./pages/home.jade
+				//- include ./page/home.jade
 				//about start
 				.row#about
 					.container
@@ -79,11 +81,12 @@ html(lang="en")
 				//Portfolio start
 				.row
 					.container#works
+						
 						h1= menu[3].name
 					hr.partition
 				//Portfolio end
 				//Contact start
-				include ./pages/contact.jade
+				include ./page/contact.jade
 				//Contact end
 				//modal start
 				//- button(type='button' class='btn btn-lg' data-toggle="modal" data-target="#myModal") Launch demo modal
@@ -101,5 +104,5 @@ html(lang="en")
 				//modal end
 		//Main Content end
 		//- Footer 
-		include ./pages/footer.jade
-		include ./pages/scripts.jade
+		include ./page/footer.jade
+		include ./page/scripts.jade
