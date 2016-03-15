@@ -3,10 +3,5 @@
   "descr":"обычный шаблон с применением html + css + js",
   "img":"http://cdn.images.express.co.uk/img/dynamic/130/590x/Mountains-625882.jpg",
   "link":"/port/templates/easeMountains/"
-},{
-  "name":"Рулетка с выиграшем",
-  "descr":"писал для задания, что-бы пройти на собеседование",
-  "img":"http://www.glavpoker.ru/spaw2/temp/images/uploaded_1b5397a9c6016928b5c4c1e304fc812b.jpg",
-  "link":"/port/templates/mobi-soft/"
 }
 ]
