@@ -10,6 +10,9 @@
 					br
 					= 'sity: Kharkov'
 					br
+					= 'mail: '
+						a(href="mailto:vakulenko.kname@gmail.com") vakulenko.kname@gmail.com
+					br
 					= 'MTC: '
 					abbr(title='Phone number') +38-095-196-98-58
 					br
@@ -26,7 +29,7 @@
 					- each val in socials
 						li
 							a(href="#{val.link}", target="_blank")
-								span.fa-stack
+								span.fa-stack.animated
 									i.fa.fa-square-o.fa-stack-2x
 									i(class="fa fa-#{val.icon} fa-stack-1x")
 			.col-md-4.text-center

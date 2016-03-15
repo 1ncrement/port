@@ -21,4 +21,14 @@
 			console.log('Insoming text doc.: '+e.responseText);
 			$('<div/>',{class:'row',html:'<h2 class="text-center">Ошибка получения данных для портфолио.</h2>'}).appendTo('#works');
 		});
+	
+	// hover socials footer
+	$('ul.socials li a span').on({
+		mouseenter: function () {
+			$(this).addClass('pulse');
+		},
+		mouseleave: function () {
+			$(this).removeClass('pulse');
+		}
+	});
 })();
