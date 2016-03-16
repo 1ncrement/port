@@ -1,0 +1,213 @@
+body{
+	font-size: 17px;
+	font-family: "FontAwesome",Helvetica Neue,Helvetica,sans-serif;
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/fontawesome-webfont.eot');
+    src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/fontawesome-webfont.woff') format('woff'),
+         url('../font/fontawesome-webfont.ttf') format('truetype'),
+         url('../font/fontawesome-webfont.svg#cuprumffuregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}   
+/* @font-face {
+    font-family: 'шрифт2';
+    src: url('шрифт2.eot');
+    src: url('шрифт2.eot?#iefix') format('embedded-opentype'),
+         url('шрифт2.woff') format('woff'),
+         url('шрифт2.ttf') format('truetype'),
+         url('шрифт2.svg#cuprumffuregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+/*animated*/
+.anim, .g-anim{
+	visibility: hidden;
+}
+.vHidden{
+	visibility: hidden;
+}
+.animated{
+	visibility: visible;
+}
+
+/*All style*/
+.white{
+	background-color: #DEDEDE;
+	color: #242424;
+}
+.grey{
+	background-color: #AFAFAF;
+	color: #242424;
+}
+.black{
+	background-color: #2F2F2F;
+	color: #fff;
+}
+.purpur{
+	color: #e72981;
+}
+.paralax{
+	color: #e72981;
+	background-image: url(../img/dot.png);
+	background-color: rgba(0,0,0,0);
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+	color: inherit;
+}
+
+.m20{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*all style end*/
+
+/*top*/
+.bgimg{
+	min-height: 400px;
+	z-index: 1;
+	background: url(../img/dot.png), url('../img/bg2.jpg') no-repeat 80%;
+}
+
+/*navbar*/
+.menu{
+	height: 50px;
+}
+.navbar{
+	height: 50px;
+	background-color: #A52DAC;
+    border-radius: 0;
+}
+.navbar-default{
+	
+}
+/*feedback*/
+.feedback .slider{
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+.feedback .slider hr.sliderBord{
+	/*padding: 20px;*/
+	margin: 10px 100px;
+}
+.feedback h1{
+	margin-top: 100px;
+}
+.paralax-1{
+	background: url(../img/dot.png), url(../img/paralax1.jpg) no-repeat;
+}
+.bx-prev,
+.bx-next{
+	padding: 10px;
+	margin: 10px;
+	background-color: rgba(0,0,0,.1);
+	border: 2px solid rgba(230,40,130,.6);
+	color: #fff;
+	border-radius: 25%;
+	font-weight: bold;
+}
+.bx-prev:hover,
+.bx-next:hover,
+.bx-prev:focus,
+.bx-next:focus{
+	color: #fff;
+}
+.bx-controls{
+	margin-top: 30px;
+}
+
+/*info*/
+.info:nth-child(odd){
+	margin: 20px 0;
+}
+.ears{
+	background-image: url(../img/info.png);
+	height: 75px;
+	width: 40px;
+	margin-top: 16px;
+}
+
+/*quality*/
+.quality .row .col-md-4 > img{
+	height: 128px;
+	width: 128px;
+}
+.quality .col-md-4 > h3{
+	min-height: 52px;
+}
+.quality .col-md-4 > p{
+	margin-bottom: 20px;
+}
+
+/*order*/
+.form > button{
+	padding: 7px 30px;
+}
+
+/*message*/
+.message{
+	max-width: 400px;
+	margin: 150px auto;
+}
+
+/*autsorting*/
+.authsorting .row>div>img{
+	width: 100%;
+}
+.auth-slider{
+	margin: 0;
+	padding: 0;
+}
+.auth-slider li{
+	overflow: hidden;
+}
+.bx-caption{
+	/*position: absolute;*/
+	/*top: 20px;*/
+}
+
+/*why we are*/
+.whyWeAre{
+
+}
+.list li{
+	line-height: 2em;
+	list-style: none;
+	text-align: left;
+}
+
+/*contacts*/
+.contact{
+
+}
+#map{
+  width: 100%;
+  height: 200px;
+}
+
+/*footer*/
+.footer{
+
+}
+.adres{
+	list-style: none;
+}
+.socials-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.socials-list li{
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+/*Media requere*/
+.container {
+    max-width: 940px;
+}
