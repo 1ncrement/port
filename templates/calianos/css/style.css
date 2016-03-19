@@ -69,9 +69,11 @@ a, a:hover, a:focus{
 
 /*top*/
 .bgimg{
-	min-height: 400px;
+	min-height: 500px;
 	z-index: 1;
-	background: url(../img/dot.png), url('../img/bg2.jpg') no-repeat 80%;
+	background: url(https://pp.vk.me/c630720/v630720247/20307/jKJ3T8Bb2qA.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 /*navbar*/
