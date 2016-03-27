@@ -42,7 +42,7 @@
 		animation.css вылет
 
 	-->
-	<title>Hookah Favorite</title>
+	<title>Hookah Favourite</title>
 	<!-- Meta tag -->
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -50,420 +50,94 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- style -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <!-- <link rel="stylesheet" href="css/jquery.bxslider.css"> -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-</head>
+	<link rel="stylesheet" href="css/style.css"></head>
 <body class="white" id="body">
 	<div class="container-fluid">
-		<!-- Top start -->
-		<div class="row">
-			<div class="bgimg">
-			</div>
-		</div>
-		<!-- Top end -->
-		<!-- Menu start -->
-		<div class="row menu">
-			<nav class="navbar" data-os-animation="bounceInDown" data-os-animation-delay="0.2s">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" class="navbar-toggle collapsed btn">
-							<span class="sr-only">Toggle</span>
-							<i class="fa fa-bars"></i>
-						</button>
-						<a href="" class="navbar-brand">My Logo</a>
-					</div>
-					<nav id="menu" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a onclick="scrollMenu('#body')" href="#body" data-toggle="collapse" data-target=".navbar-collapse.in">Главная</a></li>
-							<li><a onclick="scrollMenu('#body')" href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">Обо мне</a></li>
-							<li><a onclick="scrollMenu('#body')" href="#skills" data-toggle="collapse" data-target=".navbar-collapse.in">Навыки</a></li>
-							<li><a onclick="scrollMenu('#body')" href="#works" data-toggle="collapse" data-target=".navbar-collapse.in">Работы</a></li>
-							<li><a onclick="scrollMenu('#contacts')" href="#contacts" data-toggle="collapse" data-target=".navbar-collapse.in">Контакты</a></li>
-						</ul>
-					</nav>
+		<!-- start header-->
+		<div class="row bgimg"></div>
+		<div class="row header">
+			<div class="container header-text">
+				<div class="col-xs-3 logo text-right">
+					<img src="img/logo.png" alt="">
 				</div>
-			</nav>
-		</div>
-		<!-- Menu end -->
-		<!-- About as start -->
-		<div class="row white" id="about">
-			<div class="container">
-				<div class="m20">
-					<div class="row white text-center">
-						<img src="img/logo.png" alt="">
+				<div class="col-xs-9 text-right">
+					<div class="header-right">
+						<h1 class="header-name">Hookah Favourite</h1>
+						<div class="socials">
+							<ul class="list-inline">
+								<li><a href="#"><i class="fa fa-vk fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-skype fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-phone fa-2x"></i></a></li>
+							</ul>
+						</div>
+						<div class="contacts"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row grey">
+		<!-- end header-->
+		<!-- start about us-->
+		<div class="row about-us">
 			<div class="container">
-				<div class="m20">
-					<div class="row text-center">
-						<h2 class="purpur">Кем мы являемся?</h2>
-						<p>Мы — успешная компания в сфере кальянного обслуживания на выезде и предоставлении профессиональной организации кальянного отдыха. Наша компания сотрудничает с развлекательными комплексами, рекламными агентствами, частными клиентами по Киеву, Киевской области и больших городах Украины.</p>
-					</div>
+				<div class="row text-center">
+					<h1>О нас</h1>
+					<h5 style="max-width: 650px; margin: 40px auto;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur consequatur deserunt doloremque ducimus enim ex, facere harum illo inventore iure magnam minima mollitia nemo nihil nostrum perferendis quasi quos recusandae unde. Dolores eveniet fuga illo impedit magnam, nam nostrum odit omnis, pariatur quo, saepe similique sit totam ullam ut.</h5>
+					<img src="http://placehold.it/470x280" alt="">
 				</div>
 			</div>
 		</div>
-		<div class="row white">
-			<div class="container">
-				<div class="m20">
-					<div class="row white text-center">
-						<h2 class="purpur">Факты о нас</h2>
-						<div class="col-md-4 col-sm-6">
-							<h1 class="purpur">2</h1>
-							<p>года на рынке</p>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<h1 class="purpur">5</h1>
-							<p>заведений</p>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<h1 class="purpur">33</h1>
-							<p>персонала</p>
-						</div>
-					</div>
-				</div>
+		<!-- end about us-->
+		<!-- start any advice-->
+		<div class="row white-bg advice">
+			<div class="container text-center">
+				<h1>Мы знаем, что Вы хотите.</h1>
 			</div>
 		</div>
-		<!-- about as end -->
-		<!-- feedback start -->
-		<div class="row text-center feedback paralax-1 black">
+		<!-- end any advice-->
+		<!-- start cooperation-->
+		<div class="row grey-bg">
 			<div class="container">
-				<div class="m20">
-					<h1 class="purpur">
-						Отзывы наших клиентов
-					</h1>
-					<div class="row slider">
-						<ul class="bxslider">
-							<li>
-								<hr class="sliderBord">
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, hic.</p>
-								<hr class="sliderBord">
-								<p>от: Евлампия</p>
-							</li>
-							<li>
-								<hr class="sliderBord">
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, hic.</p>
-								<hr class="sliderBord">
-								<p>от: Жирного</p>
-							</li>
-							<li>
-								<hr class="sliderBord">
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, hic.</p>
-								<hr class="sliderBord">
-								<p>от: Петьки</p>
-							</li>
-							<li>
-								<hr class="sliderBord">
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, hic.</p>
-								<hr class="sliderBord">
-								<p>от: Трезвого</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- feedback end -->
-		<!-- catering start -->
-		<div class="row white">
-			<div class="container">
-				<div class="m20">
-					<h3 class="text-center">Вы любите кальян?</h3>
-					<div class="row">
-						<div class="media">
-							<div class="media-left">
-								<a><img src="img/left.png"></a>
-							</div>
-							<div class="media-body">
-								<h4 class="purpur text-center">Зачем ехать куда-то — кальянный кейтеринг, аренда кальяна Киев к Вашим услугам!</h4>
-								Для того, чтобы Ваше мероприятие прошло на должном уровне, Вы и Ваши друзья или коллеги, или же посетители Вашего заведения провели время весело и по-современному дом кальянов CallianoSA с радостью предлагает свои услуги, а именно «кальян на дом». Стоит отметить, что аренда кальяна (Киев, область и другие большие города)  — это не такая уж и распространенная услуга, поэтому у Вас есть уникальная возможность не просто заказать кальян на дом, но и получить профессиональную организацию в комплексе с обслуживанием кальянного отдыха.
-								<br>
-								Наша компания – это кальян кейтеринг, и мы, всего за три года работы, уже успели наладить сотрудничество не только с частными лицами, но и с многими компаниями (48компаний-партнеров), поэтому мы можем со смелостью говорить, что кальянный кейтеринг – это то, в чем мы являемся лучшими!
-								<br>
-								Для того, чтобы заказать кальянный кейтеринг (Киев и область) или же кальян (Киев) купить Вам нужно всего лишь связаться с нашими сотрудниками по указанным контактам, в свою очередь мы гарантируем, что кальян на дом (Киев) - это не только предоставление инвентаря, но и лучших мастеров кальянного дела, которые устроят Вам настоящий отдых.
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-body">
-								<h4 class="purpur text-center">Заказ, доставка кальяна на дом Киев и область</h4>
-								Перед тем, как оформить заказ кальяна на дом Вы можете выбрать модели, среди которых имеются египетские (классические), арабские, а также дизайнерские кальяны в футуристическом стиле, которые станут еще предметом интерьера Вашей вечеринки.
-								<br>
-								Стоит отметить, что наш кальян, цена (Киев) на который у CallianoSA самая оптимальная, — это прежде всего качество, поскольку как само оборудование, так и табак для него закупается только у лучших зарубежных производителей.
-								<br>
-								Запомните, CallianoSA – это лучший кальян кейтеринг (Киев), поскольку мы постоянно улучшаем качество работы посредством обучения наших сотрудников у лучших мастеров мира. Более того, аренда кальяна для вечерних заведений, проведения корпоративов или же доставка кальянов на дом помогут сделать вечер непринужденным и интересным. Поэтому если Вам нужен кальян (Киев, область или любые другие города), то Вы можете смело положиться на CallianoSA.
-							</div>
-							<div class="media-right">
-								<a><img src="img/right.png"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- catering end -->
-		<!-- more info start -->
-		<div class="row black">
-			<div class="container">
-				<div class="m20">
-					<div class="col-md-12 info text-center">
-						<p>В былые времена <span class="purpur">кальян</span> являлся необходимой частью званого обеда или интеллектуальных бесед. Предложение выкурить <span class="purpur">кальян</span> считалось важным <span class="purpur">знаком доверия</span> и отказ мог восприниматься как серьезное оскорбление.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- more info end -->
-		<!-- quality start -->
-		<div class="row quality">
-			<div class="container">
-				<div class="m20">
-					<div class="row g-anim-container">
-						<div id="loh1" class="col-md-4 text-center g-anim" data-os-animation="fadeInLeft" data-os-animation-delay="0.5s">
-							<h3>Мы в курсе всех инноваций</h3>
-							<img src="img/price1.png" alt="">
-							<p>Постоянно обновляем весь спектр услуг и оснащения. </p>
-						</div>
-						<div id="loh2" class="col-md-4 text-center g-anim" data-os-animation="fadeInLeft" data-os-animation-delay="0.8s">
-							<h3>Мы знатоки стиля</h3>
-							<img src="img/price2.png" alt="">
-							<p>Вас расслабит не только вкус табака, но и вид эксклюзивного кальяна.</p>
-						</div>
-						<div id="loh3" class="col-md-4 text-center g-anim" data-os-animation="fadeInLeft" data-os-animation-delay="1.1s">
-							<h3>Мы оперативные</h3>
-							<img src="img/price3.png" alt="">
-							<p>Быстро и доступно оформим и реализуем Ваш заказ.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- quality end -->
-		<!-- info start -->
-		<div class="row black">
-			<div class="container">
-				<div class="m20">
-					<div class="col-md-1 hidden-xs hidden-sm">
-						<div class="ears"></div>
-					</div>
-					<div class="col-sm-offset-1 col-md-offset-0 col-sm-10 info text-center">
-						<h2 class="purpur">Просим взять во внимание :</h2>
-						<p>Здесь представленные распространенные варианты. Мы всегда можем подобрать подходящий вариант для Вас.</p>
-					</div>
-					<div class="col-md-1  hidden-xs hidden-sm">
-						<div class="ears"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- info end -->
-		<!-- order start ->
-		<div class="row">
-			<div class="container">
-				<div class="m20">
-					<form action="" class="form" id="order">
-						<div class="form-group">
-							<h3>Тут позже будет нормалёк такая тема для сборки предварительного заказа</h3>
-						</div>
+				<h1 class="text-center">Сотрудничество</h1>
+				<h4 class="text-center" style="max-width: 650px; margin: 40px auto;">Мы можем действительно всё, что связано с кальянамм делом.</h4>
+				<div class="row">
+					<div class="col-xs-4 text-center">
+						<div class="img-kallash"><img src="//placehold.it/120x40" alt=""><img
+								src="//placehold.it/120x40" alt=""><img src="//placehold.it/120x40" alt=""><img
+								src="//placehold.it/120x40" alt="">
 
-						<div class="form-group text-center">
-							<button type="submit" class="btn btn-success" onclick="alert('Пока нельзя заказывать шмаль');">Заказать кальян</button>
+							<p>lorem ipsum bla bla bla text awesome</p>
 						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- order end -->
-		<!-- message start -->
-		<div class="row black">
-			<div class="container">
-				<div class="m20">
-					<div class="message text-center">
-						<h1><span class="purpur">"</span>С КАЖДЫМ ВДОХОМ НОВОЕ НАСЛАЖДЕНИЕ<span class="purpur">"</span></h1>
 					</div>
-				</div>
-			</div>
-		</div>
-		<!-- message end -->
-		<!-- info start -->
-		<div class="row paralax">
-			<div class="container">
-				<div class="m20">
-					<div class="col-md-12 info text-center">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit reiciendis quibusdam officia nemo recusandae deserunt cupiditate odio accusantium explicabo! Repellat quo sequi harum odit est et at quis esse culpa.</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- info end -->
-		<!-- how we're works start -->
-		<div class="row black">
-			<div class="container">
-				<div class="m20 text-center">
-					<h2>КАК МЫ РАБОТАЕМ?</h2>
-					<p>да фиг егочто написать</p>
-				</div>
-			</div>
-		</div>
-		<!-- how we're works end -->
-		<!-- authsorting start -->
-		<div class="row authsorting">
-			<div class="container">
-				<div class="m20 text-center">
-					<h2>Кальянный аутсорсинг Киев</h2>
-					<h3>Мы умеем организовать правильное обслуживание Ваших клиентов, так как одна с наших услуг кальянный аутсорсинг!</h3>
-					<ul class="auth-slider">
-						<li><img src="http://hronika.info/uploads/posts/2015-08/1438689179_kalyan.jpg"></li>
-						<li><img src="http://rusnewsinfo.ru/uploads/posts/2015-07/14364271341531208110124457998718-1.jpeg"></li>
-						<li><img src="img/aut1.png"></li>
-						<li><img src="img/aut2.png"></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- authsorting end -->
-		<!-- info start -->
-		<div class="row black">
-			<div class="container">
-				<div class="m20">
-					<div class="col-md-12 info text-center">
-						<h2 class="purpur">Hookah Favorite</h2>
-						<p>привезет с собою весь необходимый инвентарь и успешных мастеров.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- info end -->
-		<!-- quality start -->
-		<div class="row">
-			<div class="container">
-				<div class="m20">
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<h3>Креативность</h3>
-							<img src="img/quality1.png" alt="">
-							<p>В нашем ассортименте можно выбрать только классические египетские, арабские кальяны, но и дизайнерские футуристические модели, которые будут стильным ярким украшением Вашего заведения.</p>
+					<div class="col-xs-4 text-center">
+						<div class="img-kallash"><img src="//placehold.it/120x40" alt=""><img
+								src="//placehold.it/120x40" alt=""><img src="//placehold.it/120x40" alt=""><img
+								src="//placehold.it/120x40" alt="">
+
+							<p>lorem ipsum bla bla bla text awesome</p>
 						</div>
-						<div class="col-md-4 text-center">
-							<h3>Профессионализм</h3>
-							<img src="img/quality2.png" alt="">
-							<p>Мы даем только зарубежные мастер-классы и литературу для наших мастеров и всегда перечитываем нашу книгу пожеланий клиентов.</p>
-						</div>
-						<div class="col-md-4 text-center">
-							<h3>Качество</h3>
-							<img src="img/quality3.png" alt="">
-							<p>Привозим и закупаем только зарубежные VIP-класса табаки и кальяны, но для самых искусных клиентов есть всегда домашний по самым древним рецептам приготовленный табак. </p>
+					</div>
+					<div class="col-xs-4 text-center">
+						<div class="img-kallash"><img src="//placehold.it/120x40" alt=""><img
+								src="//placehold.it/120x40" alt=""><img src="//placehold.it/120x40" alt=""><img
+								src="//placehold.it/120x40" alt="">
+
+							<p>lorem ipsum bla bla bla text awesome</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row grey whyWeAre">
-			<div class="container">
-				<div class="m20">
-					<div class="row text-center">
-						<h2 class="purpur text-left">Мы лучше чем другие, потому что:</h2>
-						<div class="row">
-							<div class="col-sm-6">
-								<img src="img/why.png" alt="">
-							</div>
-							<div class="col-sm-6">
-								<ul class="list">
-									<li>- обеспечиваем бесперебойную работу кальяна-бара</li>
-									<li>- мы «заганяем» свою команду мастеров</li>
-									<li>- наш супервайзер берет контроль всего процесса кальян-бара</li>
-									<li>- постоянно улучшаем качество кальянов</li>
-									<li>- мы оперативно решаем все возникнувшие вопросы</li>
-									<li>- предоставим лучшую канальную карту для Вашего заведения</li>
-									<li>- контрольные закупками за нами</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="row text-center">
-						<h2 class="purpur text-right">Hookah Favorite — это</h2>
-						<div class="row">
-							<div class="col-sm-6">
-								<ul class="list">
-									<li>- новые гости для заведения</li>
-									<li>- ведение приятных и не навящивых отношений с гостями</li>
-									<li>- развитие и разширения в заведении</li>
-									<li>- маркетинговые уловки и ходы для увеличения прибыли</li>
-								</ul>
-							</div>
-							<div class="col-sm-6">
-								<img src="img/why2.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- quality end -->
-		<!-- contacts start -->
-		<div class="row white contacts" id="contacts">
-			<div id="map"></div>
-		</div>
-		<!-- contacts end -->
-		<!-- footer start -->
-		<div class="row black footer">
-			<div class="container">
-				<div class="m20">
-					<div class="row">
-						<div class="col-sm-4 text-center">
-							<h3 class="purpur">Контакты</h3>
-							<div class="row">
-								<table class="table">
-									<tr><td>Город:</td><td>Харьков</td></tr>
-									<tr><td>ул:</td><td>Хренова</td></tr>
-									<tr><td>МТС:</td><td>+38 099-999-99-99</td></tr>
-									<tr><td>Life:</td><td>+38 063-636-36-36</td></tr>
-									<tr><td>Kievstar:</td><td>+38 067-676-76-76</td></tr>
-								</table>
-							</div>
-						</div>
-						<div class="col-sm-4 text-center">
-							<h3 class="purpur">Мы в соц. сетях</h3>
-							<div class="row">
-					            <ul class="socials-list text-center">
-					              <li><a href="http://vk.com/vakula_e_g" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-vk fa-stack-1x"></i></span></a></li>
-					              <li><a href="https://www.facebook.com/profile.php?id=100004015285077" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
-					              <li><a href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2%D0%B0%D0%BA%D1%83%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE-bb422910a?trk=nav_responsive_tab_profile" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a></li>
-					              <li><a href="https://plus.google.com/u/0/110067773716162418802" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x"></i></span></a></li>
-					              <li><a href="//github.com/1ncrement/port" target="_blank"><span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-github-alt fa-stack-1x"></i></span></a></li>
-					            </ul>
-							</div>
-						</div>
-						<div class="col-sm-4 text-center">
-							<h3 class="purpur">Коротко о главном</h3>
-							<div class="row">
-								<kbd>кальяны</kbd>
-								<kbd>курение убивает</kbd>
-								<kbd>сиськи</kbd>
-								<kbd>кальянный кейтеринг</kbd>
-								<kbd>заказ кальянов</kbd>
-								<kbd>кальян на дом</kbd>
-								<kbd>харьков</kbd>
-								<kbd>как увеличить член</kbd>
-								<kbd>спайсы</kbd>
-								<kbd>соли</kbd>
-								<kbd>соли для ванной</kbd>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<h5 class="text-center"><a class="purpur">Hookah Favorite</a> 2016. © Все права можешь засунуть себе в очько.</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- footer end -->
+		<!-- end cooperation-->
 	</div>
-
 	<!-- Latest compiled and minified CSS -->
 	<script type="text/javascript" src="//www.google-analytics.com/analytics.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -481,22 +155,6 @@
 			var st = $(this).scrollTop();
 			console.log(st/100);
 		});
-
-		// menu fix
-		$('.menu')
-			.waypoint(function() {
-				$('.navbar').removeClass('navbar-default').removeClass('navbar-fixed-top');
-			},{
-				triggerOnce: false,
-				offset: '0%'
-			});
-		$('.menu')
-			.waypoint(function() {
-				$('.navbar').addClass('navbar-default', 'anim').addClass('navbar-fixed-top');
-			},{
-				triggerOnce: false,
-				offset: '0'
-			});
 
         // smooth scroll points
 		function scrollMenu(item){
